@@ -16,7 +16,6 @@ public class Post {
         User = user;
     }
     public Post() {
-        Id = 0;
         Title = "";
         Content = "";
         Upvotes = 0;

@@ -22,13 +22,30 @@ public class ApiService
     public async Task<Post[]> GetPosts()
     {
         string url = $"{baseAPI}posts/";
-        return await http.GetFromJsonAsync<Post[]>(url);
+        HttpResponseMessage msg = await http.GetAsync(url);
+        string json = await msg.Content.ReadAsStringAsync();
+    
+        Console.WriteLine("RAW JSON FROM API:");
+        Console.WriteLine(json);  // PRINT DEN RÅ JSON
+    
+        Post[]? posts = JsonSerializer.Deserialize<Post[]>(json, new JsonSerializerOptions {
+            PropertyNameCaseInsensitive = true
+        });
+    
+        return posts;
     }
 
     public async Task<Post> GetPost(int id)
     {
         string url = $"{baseAPI}posts/{id}/";
-        return await http.GetFromJsonAsync<Post>(url);
+        HttpResponseMessage msg = await http.GetAsync(url);
+        string json = await msg.Content.ReadAsStringAsync();
+    
+        Post? post = JsonSerializer.Deserialize<Post>(json, new JsonSerializerOptions {
+            PropertyNameCaseInsensitive = true
+        });
+    
+        return post;
     }
 
     public async Task<Comment> CreateComment(string content, int postId, int userId)

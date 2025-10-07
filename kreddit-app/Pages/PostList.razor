@@ -1,11 +1,9 @@
 ﻿@inherits LayoutComponentBase
 
-@using kreddit_app.Data;
-@using shared.Model;
+@using kreddit_app.Data
+@using shared.Model
 @inject ApiService apiService
-
-@using Microsoft.Extensions.Configuration
-@inject IConfiguration Configuration
+@inject NavigationManager Navigation
 
 @if (posts == null)
 {
@@ -22,11 +20,12 @@ else
         @foreach (var post in posts)
         {
             <tr>
-                <!-- 
-                    Thase a href links will match the route in the page 'PostItem.razor'.
-                    The route is defined as "/post/{id}" and the id is the post id.
-                -->
-                <td><a href="/post/@post.Id">@post.Title</a></td>
+                <!-- Link til post med ID -->
+                <td>
+                    <a href="javascript:void(0)" @onclick="() => NavigateToPost(post.Id)">
+                        @post.Title
+                    </a>
+                </td>
                 <td>@post.Content</td>
                 <td>@(post.Upvotes - post.Downvotes)</td>
                 <td><button @onclick="@(() => Upvote(post.Id))">Upvote</button></td>
@@ -40,18 +39,18 @@ else
 
 @code {
     private Post[]? posts;
-    private Post? votePost;
 
     protected override async Task OnInitializedAsync()
     {
         posts = await apiService.GetPosts();
+        Console.WriteLine(posts[0].ToString()); // Debug: se hvad første post indeholder
     }
 
     private async Task Upvote(int id)
     {
         await apiService.UpvotePost(id);
-        posts = await apiService.GetPosts(); 
-        StateHasChanged(); 
+        posts = await apiService.GetPosts();
+        StateHasChanged();
     }
 
     private async Task Downvote(int id)
@@ -61,4 +60,8 @@ else
         StateHasChanged();
     }
 
+    private void NavigateToPost(int id)
+    {
+        Navigation.NavigateTo($"/post/{id}");
+    }
 }
