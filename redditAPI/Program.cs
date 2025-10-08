@@ -59,26 +59,26 @@ app.MapGet("/api/posts", (DataService service) =>
 {
     return service.GetPosts().Select(p => new
     {
-        postId = p.Id,
+        id = p.Id,
         title = p.Title,
         content = p.Content,
         user = p.User == null ? null : new
         {
-            p.User.Id,
-            p.User.Username
+            id = p.User.Id, 
+            username = p.User.Username
         },
         upvotes = p.Upvotes,
         downvotes = p.Downvotes,
         comments = p.Comments.Select(c => new
         {
-            commentId = c.Id,
+            id = c.Id,
             content = c.Content,
             upvotes = c.Upvotes,
             downvotes = c.Downvotes,
             user = c.User == null ? null : new
             {
-                c.User.Id,
-                c.User.Username
+                id = c.User.Id,  
+                username = c.User.Username
             }
         })
     });
