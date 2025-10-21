@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "kreddit-app",
   "resources": {
-    "hash": "sha256-AnzLcHHF2GOMG8TnrYFYKW4CXDfiferY9nA/1wLfqn4=",
+    "hash": "sha256-z08CCc36HY6VS9BfoPq1f7Iqdm6PFHVIFCNvJrEs24Y=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.tnyc7xpluy.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.t32damlu4o.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -195,25 +195,25 @@
       "netstandard.kaml52uspo.wasm": "netstandard.wasm",
       "System.Private.CoreLib.uqnhzdwypx.wasm": "System.Private.CoreLib.wasm",
       "dotnet.js": "dotnet.js",
-      "dotnet.native.9ih887ebfz.js": "dotnet.native.js",
-      "dotnet.native.21mns4qp4i.wasm": "dotnet.native.wasm",
-      "dotnet.runtime.st3wwc8rqy.js": "dotnet.runtime.js",
+      "dotnet.native.l4ptthxatg.js": "dotnet.native.js",
+      "dotnet.native.d2w7colv7e.wasm": "dotnet.native.wasm",
+      "dotnet.runtime.drv0pr9n5o.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "shared.svumrm7pyk.wasm": "shared.wasm",
-      "shared.w1d7neymt5.pdb": "shared.pdb",
-      "kreddit-app.4b3e6v6wzt.wasm": "kreddit-app.wasm",
-      "kreddit-app.kqank4qjx3.pdb": "kreddit-app.pdb"
+      "shared.5y09fzfqrn.wasm": "shared.wasm",
+      "shared.i0f23ne8zc.pdb": "shared.pdb",
+      "kreddit-app.5gckfio6wv.wasm": "kreddit-app.wasm",
+      "kreddit-app.stpu2husab.pdb": "kreddit-app.pdb"
     },
     "jsModuleNative": {
-      "dotnet.native.9ih887ebfz.js": "sha256-oS7IRiQoVt9ThQ7Y2UM3XoeY0JqPD02cg9IvRdufn2w="
+      "dotnet.native.l4ptthxatg.js": "sha256-ddUN4+taa/Qv7Mr8mLpunJO+0Xw3ViOqBvedhe57/hA="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.st3wwc8rqy.js": "sha256-oBRKHAqZUsvCRnCzkQfB7zc45cpKLNq2NKyrG10IKx8="
+      "dotnet.runtime.drv0pr9n5o.js": "sha256-yfXUv1l/B489E8p12JxUvxly0JvHL9CCsoZUDlfGH9c="
     },
     "wasmNative": {
-      "dotnet.native.21mns4qp4i.wasm": "sha256-RtuwNrUOdAJ5A4aS4ZmceO4ySriaYqTdC7X++6yd9lM="
+      "dotnet.native.d2w7colv7e.wasm": "sha256-62UC3VfSQyaGpPUm7iSjBYuQ1xD31WdRYY20NQ1K+Vs="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -414,12 +414,12 @@
       "WindowsBase.vy2l5u79y6.wasm": "sha256-ufB9Mo5joMyUs3DzXWWBFFIZNEVrt6h9N5stYB6Oln4=",
       "mscorlib.xd6mv31d55.wasm": "sha256-1YSLR2eZt3ceALFV//vZUF2AloxVil3VlrW1zZYPSEI=",
       "netstandard.kaml52uspo.wasm": "sha256-HLEwBpLfzKw2/zGSVzHzFJxznCkt/WIjahrziiMrOpA=",
-      "shared.svumrm7pyk.wasm": "sha256-2AjeCLnDNxVg6pPJ8qsbbJP0HRn8Le60ajctd2nxADg=",
-      "kreddit-app.4b3e6v6wzt.wasm": "sha256-wPVIl44mtC3Y5LaEo1+0RCx+mlsF2C+zaWSYPwPeX6s="
+      "shared.5y09fzfqrn.wasm": "sha256-80cZC6SyvnqxSEFsd7murF8IqpSi3XZmNPRuedIo+ho=",
+      "kreddit-app.5gckfio6wv.wasm": "sha256-BXMpM6G+XaNQZ1fB2pNCsVftKkattZ7A+BrTtwfh5qg="
     },
     "pdb": {
-      "shared.w1d7neymt5.pdb": "sha256-1EzyoK+HyLVtT/frs5Hf2TgoST8jLVG1sJO6DEiZoVE=",
-      "kreddit-app.kqank4qjx3.pdb": "sha256-HBpPmgP0Q0Rr4Yoqn0aBDmQ1Dobe7eYjnls/txKdynY="
+      "shared.i0f23ne8zc.pdb": "sha256-fshEAIoEqaiglceKT6exv/8LLLH3oyreEgbXqy7WV80=",
+      "kreddit-app.stpu2husab.pdb": "sha256-wBsJnUV9cKzx1+CoSHyoicP04pbaa8B8zoKqorJcjAA="
     }
   },
   "cacheBootResources": true,

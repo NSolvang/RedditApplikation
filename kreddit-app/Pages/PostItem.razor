@@ -11,13 +11,13 @@ See how the links are made in 'PostList.razor'.
 <PageTitle>Kreddit</PageTitle>
 
 <style>
-div.contents {
-  background-color: #f2f0eb;
-  width: 600px;
-  border: 2px solid #452d3d;
-  padding: 10px;
-  margin-top: 20px;
-}
+    div.contents {
+        background-color: #f2f0eb;
+        width: 600px;
+        border: 2px solid #452d3d;
+        padding: 10px;
+        margin-top: 20px;
+    }
 </style>
 
 @if (Post == null)
@@ -33,29 +33,29 @@ else
     </div>
 
     <div class="contents">
-    <h4>Comments</h4>
-    <table>
-        <tr>
-            <th>User</th>
-            <th>Comment</th>
-            <th colspan="3">Votes</th>
-        </tr>
-        @foreach (var comment in Post.Comments)
-        {
+        <h4>Comments</h4>
+        <table>
             <tr>
-                <td>@comment.User.Username</td>
-                <td>@comment.Content</td>
-                <td>@(comment.Upvotes - comment.Downvotes)</td>
-                <td><button @onclick="() => Upvote(comment.Id)">Upvote</button></td>
-                <td><button @onclick="() => Downvote(comment.Id)">Downvote</button></td>
+                <th>User</th>
+                <th>Comment</th>
+                <th colspan="3">Votes</th>
             </tr>
-        }
-    </table>
+            @foreach (var comment in Post.Comments)
+            {
+                <tr>
+                    <td>@comment.User.Username</td>
+                    <td>@comment.Content</td>
+                    <td>@(comment.Upvotes - comment.Downvotes)</td>
+                    <td><button @onclick="() => UpvoteComment(PostId, comment.Id)">Upvote</button></td>
+                    <td><button @onclick="() => DownvoteComment(PostId, comment.Id)">Downvote</button></td>
+                </tr>
+            }
+        </table>
     </div>
 
     <!-- This demonstrates how to pass in PostId to the component 'CreateComment'. See how 
          it is used in the file CreateComment.razor -->
-    <CreateComment PostId=@PostId></CreateComment>
+    <CreateComment PostId="@PostId" OnCommentCreated="RefreshPost"></CreateComment>
 }
 
 @code {
@@ -68,15 +68,24 @@ else
     {
         Post = await apiService.GetPost(PostId);
     }
-    private async void Upvote(int id)
+
+    private async Task UpvoteComment(int postid, int commentid)
     {
-        var updatedPost = await apiService.UpvotePost(id);
-        
+        await apiService.UpvoteComment(postid, commentid);
+        Post = await apiService.GetPost(postid);
+        StateHasChanged();
     }
 
-    private async void Downvote(int id)
+    private async Task DownvoteComment(int postid, int commentid)
     {
-        var updatedPost = await apiService.DownvotePost(id);
+        await apiService.DownvoteComment(postid, commentid);
+        Post = await apiService.GetPost(postid);
+        StateHasChanged();
+    }
 
+    private async Task RefreshPost()
+    {
+        Post = await apiService.GetPost(PostId);
+        StateHasChanged();
     }
 }

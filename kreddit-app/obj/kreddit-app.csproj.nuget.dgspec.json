@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\kreddit-app\\kreddit-app.csproj": {}
+    "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\kreddit-app\\kreddit-app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\kreddit-app\\kreddit-app.csproj": {
+    "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\kreddit-app\\kreddit-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\kreddit-app\\kreddit-app.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\kreddit-app\\kreddit-app.csproj",
         "projectName": "kreddit-app",
-        "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\kreddit-app\\kreddit-app.csproj",
+        "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\kreddit-app\\kreddit-app.csproj",
         "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\kreddit-app\\obj\\",
+        "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\kreddit-app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\shared\\shared.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\shared\\shared.csproj"
+              "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\shared\\shared.csproj": {
+                "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\shared\\shared.csproj"
               }
             }
           }
@@ -60,13 +60,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )",
+              "version": "[9.0.10, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )",
+              "version": "[9.0.10, )",
               "autoReferenced": true
             }
           },
@@ -84,7 +84,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[9.0.9, 9.0.9]"
+              "version": "[9.0.10, 9.0.10]"
             }
           ],
           "frameworkReferences": {
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -101,14 +101,14 @@
         }
       }
     },
-    "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj": {
+    "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -156,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

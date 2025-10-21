@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.111/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,19 +9,18 @@
 </div>
 
 @code {
+    [Parameter] public int PostId { get; set; }
+    [Parameter] public EventCallback OnCommentCreated { get; set; } 
 
-    // PostId is passed in from the parent component. See how in PostItem.razor.
-    [Parameter]
-    public int PostId { get; set; }
     private string? content;
-    private async void CreateNewComment()
+
+    private async Task CreateNewComment()
     {
-        if (content == null)
-        {
-            return;
-        }
-        // TODO: Provide list of users from dropdown, or maybe just convert
-        // from username to UserId
-        await apiService.CreateComment(content, PostId, 2); // UserId: 2
+        if (string.IsNullOrWhiteSpace(content)) return;
+
+        await apiService.CreateComment(content, PostId, 1);
+        content = "";
+
+        await OnCommentCreated.InvokeAsync(); 
     }
 }

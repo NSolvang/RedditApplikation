@@ -1,12 +1,15 @@
 ﻿@page "/"
+@using shared.Model
 
 <PageTitle>Kreddit</PageTitle>
 
 <h1>Welcome to Kreddit</h1>
 
+<CreatePost OnPostCreated="AddPostToList"></CreatePost>
+
 <p>Below you can read the most recent posts.</p>
 
-<PostList></PostList>
+<PostList @ref="postList"></PostList>
 
 <h3>Notes about this app:</h3>
 <ul>
@@ -16,3 +19,14 @@
     <li>Cannot create new posts, only new comments.</li>
     <li>No user selection. User is hardcoded (Mads).</li>
 </ul>
+
+@code {
+    private PostList? postList;
+
+    private async Task AddPostToList(Post newPost)
+    {
+        if (postList != null)
+            await postList.AddPostAsync(newPost);
+    }
+
+}

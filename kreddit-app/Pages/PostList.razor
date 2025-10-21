@@ -38,25 +38,36 @@ else
 }
 
 @code {
-    private Post[]? posts;
+    private List<Post> posts = new List<Post>();
 
     protected override async Task OnInitializedAsync()
     {
-        posts = await apiService.GetPosts();
-        Console.WriteLine(posts[0].ToString()); // Debug: se hvad første post indeholder
+        var loadedPosts = await apiService.GetPosts();
+        if (loadedPosts != null)
+            posts = loadedPosts.ToList();
+
+        if (posts.Count > 0)
+            Console.WriteLine(posts[0].ToString());
     }
+
+    public async Task AddPostAsync(Post newPost)
+    {
+        posts.Add(newPost);
+        await InvokeAsync(StateHasChanged);
+    }
+
 
     private async Task Upvote(int id)
     {
         await apiService.UpvotePost(id);
-        posts = await apiService.GetPosts();
+        posts = (await apiService.GetPosts()).ToList();
         StateHasChanged();
     }
 
     private async Task Downvote(int id)
     {
         await apiService.DownvotePost(id);
-        posts = await apiService.GetPosts();
+        posts = (await apiService.GetPosts()).ToList();
         StateHasChanged();
     }
 

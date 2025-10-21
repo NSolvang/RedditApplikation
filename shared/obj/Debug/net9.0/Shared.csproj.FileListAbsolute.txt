@@ -10,3 +10,15 @@ C:\Users\Bruger\RiderProjects\RedditSolution\Shared\obj\Debug\net9.0\refint\Shar
 C:\Users\Bruger\RiderProjects\RedditSolution\Shared\obj\Debug\net9.0\Shared.pdb
 C:\Users\Bruger\RiderProjects\RedditSolution\Shared\obj\Debug\net9.0\ref\Shared.dll
 C:\Users\Bruger\RiderProjects\RedditSolution\Shared\obj\Debug\net9.0\Shared.sourcelink.json
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\bin\Debug\net9.0\shared.deps.json
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\bin\Debug\net9.0\shared.dll
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\bin\Debug\net9.0\shared.pdb
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.AssemblyInfoInputs.cache
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.AssemblyInfo.cs
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.sourcelink.json
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.dll
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\refint\shared.dll
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\shared.pdb
+C:\Users\Bruger\RiderProjects\RedditApplikation\shared\obj\Debug\net9.0\ref\shared.dll

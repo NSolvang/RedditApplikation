@@ -1,0 +1,55 @@
+@using kreddit_app.Data
+@using shared.Model
+@inject ApiService apiService
+
+<h3>Opret nyt opslag</h3>
+
+<EditForm Model="@newPost" OnValidSubmit="@CreateNewPost">
+    <fieldset style="border:1px solid #ccc; padding:15px; border-radius:5px; max-width:600px;">
+        <div class="form-group" style="margin-bottom:10px;">
+            <label for="title">Titel:</label>
+            <InputText id="title" class="form-control" @bind-Value="newPost.Title" placeholder="Skriv titel..." />
+        </div>
+        <div class="form-group" style="margin-bottom:10px;">
+            <label for="content">Beskrivelse:</label>
+            <InputTextArea id="content" class="form-control" @bind-Value="newPost.Content" placeholder="Skriv beskrivelse..." rows="4" />
+        </div>
+        <button type="submit" class="btn btn-primary">Opret post</button>
+    </fieldset>
+</EditForm>
+
+@code {
+    [Parameter]
+    public EventCallback<Post> OnPostCreated { get; set; }
+
+    private Post newPost = new Post(); // Modelobjekt
+
+    private async Task CreateNewPost()
+    {
+        if (string.IsNullOrWhiteSpace(newPost.Title) || string.IsNullOrWhiteSpace(newPost.Content))
+        {
+            Console.WriteLine("Titel og beskrivelse skal udfyldes.");
+            return;
+        }
+
+        var createdPost = await apiService.CreatePost(newPost.Title, newPost.Content, 2);
+
+        if (createdPost != null)
+        {
+            newPost = new Post(); // nulstil formularen
+
+            // Giv besked til PostList, så den opdaterer uden refresh
+            if (OnPostCreated.HasDelegate)
+            {
+                await OnPostCreated.InvokeAsync(createdPost);
+            }
+            StateHasChanged();  
+        }
+        else
+        {
+            Console.WriteLine("Kunne ikke oprette post.");
+        }
+    }
+    
+    
+}

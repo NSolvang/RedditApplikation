@@ -53,10 +53,10 @@ public class ApiService
         string url = $"{baseAPI}posts/{postId}/comments";
      
         // Post JSON to API, save the HttpResponseMessage
-        HttpResponseMessage msg = await http.PostAsJsonAsync(url, new { content, userId });
+        HttpResponseMessage msg = await http.PostAsJsonAsync(url, new { content, userId, postId});
 
         // Get the JSON string from the response
-        string json = msg.Content.ReadAsStringAsync().Result;
+        string json = await msg.Content.ReadAsStringAsync();
 
         // Deserialize the JSON string to a Comment object
         Comment? newComment = JsonSerializer.Deserialize<Comment>(json, new JsonSerializerOptions {
@@ -66,6 +66,30 @@ public class ApiService
         // Return the new comment 
         return newComment;
     }
+
+    public async Task<Post> CreatePost(string title, string content, int userId)
+    {
+        string url = $"{baseAPI}posts";
+
+        // Post JSON til API
+        var msg = await http.PostAsJsonAsync(url, new { Title = title, Content = content, UserId = userId });
+        msg.EnsureSuccessStatusCode();
+
+        string json = await msg.Content.ReadAsStringAsync();
+
+        if (string.IsNullOrWhiteSpace(json))
+        {
+            // Hvis API ikke returnerer JSON, lav Post-objekt lokalt
+            var user = new User { Id = userId, Username = "Mads" }; // hårdkodet til test
+            return new Post(user, title, content);
+        }
+
+        var post = JsonSerializer.Deserialize<Post>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        return post!;
+    }
+
+
+
 
     public async Task<Post> UpvotePost(int id)
     {
@@ -104,4 +128,34 @@ public class ApiService
         // Return the updated post (vote increased)
         return updatedPost;
     }
+    
+    public async Task<Comment> DownvoteComment(int postid, int commentid)
+    {
+        string url = $"{baseAPI}posts/{postid}/comments/{commentid}/downvote";
+
+        HttpResponseMessage msg = await http.PutAsJsonAsync(url, "");
+        string json = await msg.Content.ReadAsStringAsync();
+
+        Comment? updatedComment = JsonSerializer.Deserialize<Comment>(json, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        });
+
+        return updatedComment!;
+    }
+
+public async Task<Comment> UpvoteComment(int postid, int commentid)
+{
+    string url = $"{baseAPI}posts/{postid}/comments/{commentid}/upvote";
+
+    HttpResponseMessage msg = await http.PutAsJsonAsync(url, "");
+    string json = await msg.Content.ReadAsStringAsync();
+
+    Comment? updatedComment = JsonSerializer.Deserialize<Comment>(json, new JsonSerializerOptions
+    {
+        PropertyNameCaseInsensitive = true
+    });
+
+    return updatedComment!;
+}
 }
