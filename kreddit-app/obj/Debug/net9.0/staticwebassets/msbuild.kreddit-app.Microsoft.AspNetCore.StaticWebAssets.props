@@ -318,8 +318,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>k8yrubalaf</Fingerprint>
-      <Integrity>7E++0rVZRZ+ORPCuTRCrFahY/I0YG63zE6aYvPHL+IU=</Integrity>
+      <Fingerprint>9x6pcq5frv</Fingerprint>
+      <Integrity>TTMiiZyV949EMBVxhZ7sgJ7B8bKT8m27q1GgSQdBGww=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\kreddit-app.styles.css'))</OriginalItemSpec>

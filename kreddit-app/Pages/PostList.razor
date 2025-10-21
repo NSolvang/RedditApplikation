@@ -11,30 +11,20 @@
 }
 else
 {
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Content</th>
-            <th colspan="3">Votes</th>
-        </tr>
+    <div class="post-feed">
         @foreach (var post in posts)
         {
-            <tr>
-                <!-- Link til post med ID -->
-                <td>
-                    <a href="javascript:void(0)" @onclick="() => NavigateToPost(post.Id)">
-                        @post.Title
-                    </a>
-                </td>
-                <td>@post.Content</td>
-                <td>@(post.Upvotes - post.Downvotes)</td>
-                <td><button @onclick="@(() => Upvote(post.Id))">Upvote</button></td>
-                <td><button @onclick="@(() => Downvote(post.Id))">Downvote</button></td>
-            </tr>
+            <div class="post-card">
+                <h3 @onclick="() => NavigateToPost(post.Id)" class="post-title">@post.Title</h3>
+                <p class="post-content">@post.Content</p>
+                <div class="post-footer">
+                    <span class="post-votes">Votes: @(post.Upvotes - post.Downvotes)</span>
+                    <button class="btn-upvote" @onclick="@(() => Upvote(post.Id))">Upvote</button>
+                    <button class="btn-downvote" @onclick="@(() => Downvote(post.Id))">Downvote</button>
+                </div>
+            </div>
         }
-    </table>
-
-    <br/>
+    </div>
 }
 
 @code {

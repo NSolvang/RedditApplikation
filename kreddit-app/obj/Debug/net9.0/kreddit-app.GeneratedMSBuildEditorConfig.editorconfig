@@ -32,25 +32,25 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Pages/PostItem.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdEl0ZW0ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Pages/PostList.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdExpc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Shared/CreateComment.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENyZWF0ZUNvbW1lbnQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Shared/CreatePost.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENyZWF0ZVBvc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Pages/PostItem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tvk001wetq
+
+[C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Pages/PostList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0kovalzpyr
+
+[C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Shared/CreatePost.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENyZWF0ZVBvc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zeosx9f714
 
 [C:/Users/Bruger/RiderProjects/RedditApplikation/kreddit-app/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

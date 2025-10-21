@@ -1,0 +1,100 @@
+.post-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.post-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.post-title {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.post-meta {
+    color: #777;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.comments-section {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.comment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.comment-table th, .comment-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.comment-table th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+}
+
+.username {
+    font-weight: bold;
+    color: #333;
+}
+
+.votes {
+    text-align: center;
+    width: 80px;
+}
+
+.vote-buttons {
+    text-align: center;
+    width: 90px;
+}
+
+.btn-vote {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 6px;
+    transition: transform 0.1s, color 0.2s;
+}
+
+.btn-vote.up:hover {
+    color: #28a745;
+    transform: translateY(-1px);
+}
+
+.btn-vote.down:hover {
+    color: #dc3545;
+    transform: translateY(1px);
+}
+
+.no-comments {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.comment-form {
+    margin-top: 20px;
+}

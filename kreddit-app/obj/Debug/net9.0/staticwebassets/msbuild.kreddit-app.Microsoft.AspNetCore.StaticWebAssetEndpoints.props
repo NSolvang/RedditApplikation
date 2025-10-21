@@ -204,17 +204,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BVBtiEqW43gyZBuNM9hkZBNW6Akq3sl8Ei0/\u002BxKtzlw="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"759"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022BVBtiEqW43gyZBuNM9hkZBNW6Akq3sl8Ei0/\u002BxKtzlw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Oct 2025 06:52:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="kreddit-app.k8yrubalaf.styles.css">
+    <StaticWebAssetEndpoint Include="kreddit-app.9x6pcq5frv.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\kreddit-app.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k8yrubalaf"},{"Name":"integrity","Value":"sha256-7E\u002B\u002B0rVZRZ\u002BORPCuTRCrFahY/I0YG63zE6aYvPHL\u002BIU="},{"Name":"label","Value":"kreddit-app.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1804"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227E\u002B\u002B0rVZRZ\u002BORPCuTRCrFahY/I0YG63zE6aYvPHL\u002BIU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Oct 2025 06:52:38 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9x6pcq5frv"},{"Name":"integrity","Value":"sha256-TTMiiZyV949EMBVxhZ7sgJ7B8bKT8m27q1GgSQdBGww="},{"Name":"label","Value":"kreddit-app.styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6341"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022TTMiiZyV949EMBVxhZ7sgJ7B8bKT8m27q1GgSQdBGww=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Oct 2025 12:55:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="kreddit-app.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\kreddit-app.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7E\u002B\u002B0rVZRZ\u002BORPCuTRCrFahY/I0YG63zE6aYvPHL\u002BIU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1804"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227E\u002B\u002B0rVZRZ\u002BORPCuTRCrFahY/I0YG63zE6aYvPHL\u002BIU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Oct 2025 06:52:38 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TTMiiZyV949EMBVxhZ7sgJ7B8bKT8m27q1GgSQdBGww="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6341"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022TTMiiZyV949EMBVxhZ7sgJ7B8bKT8m27q1GgSQdBGww=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Oct 2025 12:55:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_framework/blazor.webassembly.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.webassembly.js'))</AssetFile>

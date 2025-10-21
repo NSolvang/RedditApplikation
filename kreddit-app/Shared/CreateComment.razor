@@ -1,16 +1,20 @@
 @using kreddit_app.Data;
 @inject ApiService apiService
+@inject NavigationManager navManager
+
 
 <div>
     <br/>
-    <h3>Write a comment</h3>
-    <input placeholder="Content" type="input" id="content" @bind-value="content"/>
-    <button id="createPostButton" type="button" @onclick="CreateNewComment">Post comment</button>
+    <h3>Tilføj en kommentar</h3>
+    <input placeholder="Content" type="input" id="content" @bind-value="content" />
+    <button id="createPostButton" type="button" class="btn-submit" @onclick="CreateNewComment">Post comment</button>
+    <br /><br />
+    <button type="button" class="btn-submit" @onclick="GoBack">Tilbage til forsiden</button>
 </div>
 
 @code {
     [Parameter] public int PostId { get; set; }
-    [Parameter] public EventCallback OnCommentCreated { get; set; } 
+    [Parameter] public EventCallback OnCommentCreated { get; set; }
 
     private string? content;
 
@@ -20,7 +24,11 @@
 
         await apiService.CreateComment(content, PostId, 1);
         content = "";
+        await OnCommentCreated.InvokeAsync();
+    }
 
-        await OnCommentCreated.InvokeAsync(); 
+    private void GoBack()
+    {
+        navManager.NavigateTo("/");
     }
 }
