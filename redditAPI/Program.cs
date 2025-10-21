@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.Json;
 
 using Data;
 using Service;
+using shared.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -113,14 +114,17 @@ app.MapPut("/api/posts/{postid}/comments/{commentid}/downvote", (DataService ser
 
 app.MapPost("/api/posts", (DataService service, NewPostData data) =>
 {
-    string result = service.CreatePost(data.Title, data.Content, data.UserId);
-    return new { message = result };
+    Post createdPost = service.CreatePost(data.Title, data.Content, data.UserId);
+    return Results.Ok(createdPost); 
 });
 
-app.MapPost("/api/comments", (DataService service, NewCommentData data) =>
+
+app.MapPost("/api/posts/{id}/comments", (DataService service, NewCommentData data) =>
 {
-    string result = service.CreateComment(data.Content, data.UserId, data.PostId);
-    return new { message = result };
+    service.CreateComment(data.Content, data.UserId, data.PostId);
+    var post = service.GetPost(data.PostId);
+    var newComment = post.Comments.Last(); // hent den senest tilføjede
+    return newComment;
 });
 
 app.Run();

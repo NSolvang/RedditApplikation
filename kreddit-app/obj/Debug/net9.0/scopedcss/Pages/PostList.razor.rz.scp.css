@@ -1,0 +1,65 @@
+.post-feed[b-0kovalzpyr] {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-card[b-0kovalzpyr] {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-title[b-0kovalzpyr] {
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.post-title:hover[b-0kovalzpyr] {
+    text-decoration: underline;
+}
+
+.post-content[b-0kovalzpyr] {
+    margin-bottom: 15px;
+}
+
+.post-footer[b-0kovalzpyr] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-upvote[b-0kovalzpyr], .btn-downvote[b-0kovalzpyr] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-upvote[b-0kovalzpyr] {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-upvote:hover[b-0kovalzpyr] {
+    background-color: #218838;
+}
+
+.btn-downvote[b-0kovalzpyr] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-downvote:hover[b-0kovalzpyr] {
+    background-color: #c82333;
+}
+
+.post-votes[b-0kovalzpyr] {
+    font-weight: bold;
+}

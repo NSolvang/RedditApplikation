@@ -3135,11 +3135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\redditAPI\\redditAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\redditAPI\\redditAPI.csproj",
       "projectName": "redditAPI",
-      "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\redditAPI\\redditAPI.csproj",
+      "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\redditAPI\\redditAPI.csproj",
       "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\redditAPI\\obj\\",
+      "outputPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\redditAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3154,8 +3154,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\Shared\\Shared.csproj"
+            "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\Shared\\Shared.csproj"
             }
           }
         }
@@ -3210,7 +3210,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.111/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

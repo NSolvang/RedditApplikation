@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("redditAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0922bc8bdb9af495aefc8eed9bf70c88f17de30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f536fee9b3ae4f9a181ab24169a881916f87316")]
 [assembly: System.Reflection.AssemblyProductAttribute("redditAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("redditAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

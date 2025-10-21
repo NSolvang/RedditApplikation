@@ -116,10 +116,10 @@ public class DataService
         return comment;
     }
 
-    public string CreatePost(string title, string content, int userId)
+    public Post CreatePost(string title, string content, int userId)
     {
         var user = db.Users.FirstOrDefault(u => u.Id == userId);
-        if (user == null) return "User not found";
+        if (user == null) throw new Exception("User not found");
 
         var post = new Post
         {
@@ -133,8 +133,10 @@ public class DataService
 
         db.Post.Add(post);
         db.SaveChanges();
-        return "Post created";
+
+        return post; 
     }
+
 
     public string CreateComment(string content, int userId, int postId)
     {

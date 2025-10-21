@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jEeNNP3hMfU=",
+  "dgSpecHash": "KwgdFWxXRTk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\RiderProjects\\RedditSolution\\redditAPI\\redditAPI.csproj",
+  "projectFilePath": "C:\\Users\\Bruger\\RiderProjects\\RedditApplikation\\redditAPI\\redditAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruger\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\9.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.9.0.8.nupkg.sha512",
